@@ -15,7 +15,7 @@
 git clone https://github.com/Uliana0419/Practice.git
 
 # Переход в директорию проекта
-cd ваш_репозиторий
+cd Practice.git
 
 # Установка зависимостей
 npm install
@@ -30,7 +30,7 @@ npm install
 git clone https://github.com/Uliana0419/Practice.git
 
 # Переход в директорию проекта
-cd ваш_репозиторий
+cd Practice.git
 
 # Установка зависимостей
 npm install
@@ -38,6 +38,13 @@ npm install
 # Запуск проекта
 npm start
 ```
+
+## Этапы создания кода
+
+- Импорт нужной библиотеки
+- Установка точности
+- Выбор метода вычисления
+- Формирование функции
 
 ## Запуск программы
 
