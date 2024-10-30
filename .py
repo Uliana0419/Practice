@@ -1,14 +1,11 @@
 import decimal
 
-# Установка точности
-def calculate_pi(n):
-    # Задаём точность
-    decimal.getcontext().prec = n + 2  # +2 для округления
+def calculate_pi(n): # Установка точности
+    decimal.getcontext().prec = n + 2   # Задаём точность
 
-    # Формула Бэйли-Боруэйна-Азад-Зимана (BBP)
-    pi = decimal.Decimal(0)
+    pi = decimal.Decimal(0) # Формула 
     k = 0
-    while k < 100:  # число итераций, может быть увеличено для большей точности
+    while k < 100:  
         pi += (decimal.Decimal(1) / decimal.Decimal(16) ** k) * (
             decimal.Decimal(4) / (8 * k + 1) -
             decimal.Decimal(2) / (8 * k + 4) -
@@ -17,10 +14,8 @@ def calculate_pi(n):
         )
         k += 1
         
-    # Округляем до нужного количества знаков
-    return str(pi)[:n + 2]  # +2 для учёта '3.'
+    return str(pi)[:n + 2]  # +2 для учёта '3.' # Округляем до нужного количества знаков
 
-# Ввод количества знаков после запятой
 n = int(input("Введите количество знаков после запятой: "))
 pi_value = calculate_pi(n)
 
